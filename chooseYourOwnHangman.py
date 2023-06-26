@@ -43,7 +43,7 @@ if choice1 == "left":
             print("You pet the monkey he tries to steal your soul. To fend him off you must play hangman")
             # setting up variables needed for  hangman
             word_list2_1_1 = words.word_list
-            chosen_word2_1_1 = random.choice(word_list)
+            chosen_word2_1_1 = random.choice(word_list2_1_1)
             end_of_game2_1_1 = False
             lives2_1_1 = 6
             stages2_1_1 = art.stages
@@ -90,6 +90,8 @@ if choice1 == "left":
 
             # prints the display list variable as a string
             print(f"{' '.join(display2_1_1)}")
+
+            print(stages2_1_1[lives2_1_1])
 
             # checks if user has guessed all the blanks and if so wins
             if "_" not in display2_1_1:
@@ -162,6 +164,8 @@ if choice1 == "left":
             # prints the display list variable as a string
             print(f"{' '.join(display2_1)}")
 
+            print(stages2_1[lives2_1])
+
             # checks if user has guessed all the blanks and if so wins
             if "_" not in display2_1:
                 end_of_game2_1 = True
@@ -229,6 +233,8 @@ if choice1 == "left":
 
                         # prints the display list variable as a string
                         print(f"{' '.join(display2_1_1)}")
+
+                        print(stages2_1_1[lives2_1_1])
 
 
                         # checks if user has guessed all the blanks and if so wins
@@ -382,6 +388,7 @@ if choice1 == "right":
                     # prints the display list variable as a string
                     print(f"{' '.join(display2_1)}")
 
+                    print(stages2_1[lives2_1])
 
                     # checks if user has guessed all the blanks and if so wins
                     if "_" not in display2_1:
