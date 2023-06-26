@@ -12,7 +12,8 @@ import words
 logo = art.logo
 # guessed_letters = []
 # display = []
-
+death = art.death
+cheers = art.beer
 
 
 # printing logo for game
@@ -33,8 +34,10 @@ if choice1 == "left":
             print("You dont pet the monkey. As you pass the monkey you see a knife clutched in his hand. Once out of your sight you hear a blood curdling scream. You dont look back")
             choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
             if choice2_1_1_1 == "treasure":
+                print(death)
                 print("Game Over you greedy bastard!")
             if choice2_1_1_1 == "exit":
+                print(cheers)
                 print("The end. You escape. You Win. Go Home. It's over")
         if choice2_1_1 == "yes":
             print("You pet the monkey he tries to steal your soul. To fend him off you must play hangman")
@@ -82,6 +85,7 @@ if choice1 == "left":
                 # Checks if user still has life if not game over
                 if lives2_1_1 == 0:
                     end_of_game2_1_1 = True
+                    print(death)
                     print("You lose, loser.")
 
             # prints the display list variable as a string
@@ -90,12 +94,15 @@ if choice1 == "left":
             # checks if user has guessed all the blanks and if so wins
             if "_" not in display2_1_1:
                 end_of_game2_1_1 = True
+                print(cheers)
                 print("You've won. for now...")
                 # end of hangman logic
                 choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                 if choice2_1_1_1 == "treasure":
+                    print(death)
                     print("Game Over you greedy bastard!")
                 if choice2_1_1_1 == "exit":
+                    print(cheers)
                     print("The end. You escape. You Win. Go Home. It's over")
 
 
@@ -148,6 +155,7 @@ if choice1 == "left":
                 # Checks if user still has life if not game over
                 if lives2_1 == 0:
                     end_of_game2_1 = True
+                    print(death)
                     print("You lose, loser.")
 
 
@@ -157,6 +165,7 @@ if choice1 == "left":
             # checks if user has guessed all the blanks and if so wins
             if "_" not in display2_1:
                 end_of_game2_1 = True
+                print(cheers)
                 print("You've won. for now...")
                 # end of hangman logic
                 choice2_1_1 = input("You run into a monkey. He looks cute yet mischevious. Do you pet the monkey. Choose one: yes or no  ").lower()
@@ -164,8 +173,10 @@ if choice1 == "left":
                     print("You dont pet the monkey. As you pass the monkey you see a knife clutched in his hand. Once out of your sight you hear a blood curdling scream. You dont look back")
                     choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                     if choice2_1_1_1 == "treasure":
+                            print(death)
                             print("Game Over you greedy bastard!")
                     if choice2_1_1_1 == "exit":
+                            print(cheers)
                             print("The end. You escape. You Win. Go Home. It's over")
                 if choice2_1_1 == "yes":
                     print("You pet the monkey he tries to steal your soul. To fend him off you must play hangman")
@@ -213,6 +224,7 @@ if choice1 == "left":
                             # Checks if user still has life if not game over
                             if lives2_1_1 == 0:
                                 end_of_game2_1_1 = True
+                                print(death)
                                 print("You lose, loser.")
 
                         # prints the display list variable as a string
@@ -222,12 +234,15 @@ if choice1 == "left":
                         # checks if user has guessed all the blanks and if so wins
                         if "_" not in display2_1_1:
                             end_of_game2_1_1 = True
+                            print(cheers)
                             print("You've won. for now...")
                             # end of hangman logic
                             choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                             if choice2_1_1_1 == "treasure":
+                                print(death)
                                 print("Game Over you greedy bastard!")
                             if choice2_1_1_1 == "exit":
+                                print(cheers)
                                 print("The end. You escape. You Win. Go Home. It's over")
 
 
@@ -283,6 +298,7 @@ if choice1 == "right":
             # Checks if user still has life if not game over
             if lives == 0:
                 end_of_game = True
+                print(death)
                 print("You lose, loser.")
 
 
@@ -294,6 +310,7 @@ if choice1 == "right":
         # checks if user has guessed all the blanks and if so wins
         if "_" not in display:
             end_of_game = True
+            print(cheers)
             print("You've won. for now..")
             # end of hangman logic
             choice2_1 = input("You find a bag in the road. It has two items in it. Choose one: Lighter or Dictionary").lower()
@@ -304,8 +321,10 @@ if choice1 == "right":
                 print("You let him use your lighter and he continues to smoke all his life until one day he gets lung cancer. He dies. You pass ")
                 choice2_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                 if choice2_1_1 == "treasure":
+                    print(death)
                     print("Game Over you greedy bastard!")
                 if choice2_1_1 == "exit":
+                    print(cheers)
                     print("The end. You escape. You Win. Go Home. It's over")
 
             if choice2_1 == "dictionary":
@@ -356,6 +375,7 @@ if choice1 == "right":
                         # Checks if user still has life if not game over
                         if lives2_1 == 0:
                             end_of_game2_1 = True
+                            print(death)
                             print("You lose, loser.")
 
 
@@ -366,11 +386,14 @@ if choice1 == "right":
                     # checks if user has guessed all the blanks and if so wins
                     if "_" not in display2_1:
                         end_of_game2_1 = True
+                        print(cheers)
                         print("You've won. for now...")
                         # end of hangman logic
                         choice2_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                         if choice2_1_1 == "treasure":
+                            print(death)
                             print("Game Over you greedy bastard!")
                         if choice2_1_1 == "exit":
+                            print(cheers)
                             print("The end. You escape. You Win. Go Home. It's over")
 
