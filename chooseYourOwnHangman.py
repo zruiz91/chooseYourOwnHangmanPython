@@ -14,20 +14,38 @@ logo = art.logo
 # display = []
 death = art.death
 cheers = art.beer
+boat = art.boat
 
-
+# !!!!!!!!!!! Preamble for the game !!!!!!!!!!!!!!!!!!!
 # printing logo for game
 print(f"{logo}\n")
 
 print("\nWelcome to Hangman's Jungle.")
-print("Your mission is to leave with your head on your shoulders.")
+
+# user inputs name
+user_name = input("\nType your name here:  ")
+
+
+print(f"Once upon a time, deep within the heart of the enchanted forest, there was a brave adventurer named {user_name}. As they ventured through the dense woods, they stumbled upon a weathered map that depicted the location of a mythical treasure hidden within the forest.")
+
+print(f"Driven by curiosity and a thirst for adventure, {user_name} decided to embark on a journey to uncover the treasure. However, the forest was not only home to beautiful creatures but also dangerous monsters and fierce dragons. {user_name} knew that each step could lead to peril or glory.")
+
+# !!!!!!!!!!! End of Preamble for the game !!!!!!!!!!!!!!!!!!!
+
+
+# !!!!!!!!!!! First Choice!!!!!!!!!!!!!!!!!!!
 
 choice1 = input('You\'ve reached a fork in the road. Type "left" or "right"  ').lower()
 
-if choice1 == "left":
-    choice2_1 = input("You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
 
+# !!!!!!!!!!! First Choice Left !!!!!!!!!!!!!!!!!!!
+if choice1 == "left":
+    choice2_1 = input(f"You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
+
+
+# !!!!!!!!!!! First Choice Left Second Choice Wait !!!!!!!!!!!!!!!!!!!
     if choice2_1 == "wait":
+        print(boat)
         print("The boat takes you safely to the other side")
         choice2_1_1 = input("You run into a monkey. He looks cute yet mischevious. Do you pet the monkey. Choose one: yes or no  ").lower()
         if choice2_1_1 == "no":
@@ -108,7 +126,7 @@ if choice1 == "left":
                     print("The end. You escape. You Win. Go Home. It's over")
 
 
-
+# !!!!!!!!!!! First Choice Left Second Choice swim !!!!!!!!!!!!!!!!!!!
     if choice2_1 == "swim":
         print("Beast from the depths request 3.50 to pass. You have no money so are forced to play Hangman")
         # setting up variables needed for  hangman
@@ -252,7 +270,7 @@ if choice1 == "left":
                                 print("The end. You escape. You Win. Go Home. It's over")
 
 
-
+# !!!!!!!!!!! First Choice right !!!!!!!!!!!!!!!!!!!
 if choice1 == "right":
     print("You run into a Big Mo, Mesquito King of the Jungle. Its time to play hangman")
 
