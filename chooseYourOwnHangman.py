@@ -1,4 +1,6 @@
 # importing modules and files
+#HINT: You can call clear() to clear the output in the console.
+from replit import clear
 import random
 import art
 import words
@@ -15,6 +17,8 @@ logo = art.logo
 death = art.death
 cheers = art.beer
 boat = art.boat
+forest = art.forest
+lighter = art.lighter
 
 # !!!!!!!!!!! Preamble for the game !!!!!!!!!!!!!!!!!!!
 # printing logo for game
@@ -25,11 +29,24 @@ print("\nWelcome to Hangman's Jungle.")
 # user inputs name
 user_name = input("\nType your name here:  ")
 
+clear()
+print(forest)
+print(f"\nOnce upon a time, deep within the heart of the enchanted forest, there was a brave adventurer named {user_name}. As they ventured through the dense woods, they stumbled upon a weathered map that depicted the location of a mythical treasure hidden within the forest.\n")
 
-print(f"Once upon a time, deep within the heart of the enchanted forest, there was a brave adventurer named {user_name}. As they ventured through the dense woods, they stumbled upon a weathered map that depicted the location of a mythical treasure hidden within the forest.")
+input("click Enter to continue")
 
-print(f"Driven by curiosity and a thirst for adventure, {user_name} decided to embark on a journey to uncover the treasure. However, the forest was not only home to beautiful creatures but also dangerous monsters and fierce dragons. {user_name} knew that each step could lead to peril or glory.")
+clear()
+print(treasure)
+print(f"Driven by curiosity and a thirst for adventure, {user_name} decided to embark on a journey to uncover the treasure.")
+print(butt)
+input("click Enter to continue")
 
+clear()
+print(fairy)
+print(f"However, the forest was not only home to beautiful creatures but also dangerous monsters and fierce dragons. {user_name} knew that each step could lead to peril or glory.")
+print(skull)
+input("click Enter to continue")
+clear()
 # !!!!!!!!!!! End of Preamble for the game !!!!!!!!!!!!!!!!!!!
 
 
