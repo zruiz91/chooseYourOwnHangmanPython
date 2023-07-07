@@ -26,8 +26,9 @@ butt = art.butt
 fork_in_road = art.fork_in_road
 seabeast = art.seabeast
 boat = art.boat
-
+lake_waterhole = art.lake_waterhole
 seabeast = art.seabeast
+smoking = art.smoking
 
 # !!!!!!!!!!! Preamble for the game !!!!!!!!!!!!!!!!!!!
 # printing logo for game
@@ -68,7 +69,8 @@ choice1 = input('You\'ve reached a fork in the road. Type "left" or "right"  ').
 # !!!!!!!!!!! First Choice Left !!!!!!!!!!!!!!!!!!!
 if choice1 == "left":
     clear()
-    choice2_1 = input(f"You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
+    print(lake_waterhole)
+    choice2_1 = input("You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
 
 
 # !!!!!!!!!!! First Choice Left Second Choice Wait !!!!!!!!!!!!!!!!!!!
@@ -78,16 +80,24 @@ if choice1 == "left":
         print("The boat takes you safely to the other side")
         choice2_1_1 = input("You run into a monkey. He looks cute yet mischevious. Do you pet the monkey. Choose one: yes or no  ").lower()
         if choice2_1_1 == "no":
+            clear()
             print("You dont pet the monkey. As you pass the monkey you see a knife clutched in his hand. Once out of your sight you hear a blood curdling scream. You dont look back")
+            print(fork_in_road)
             choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
             if choice2_1_1_1 == "treasure":
+                clear()
                 print(death)
                 print("Game Over you greedy bastard!")
             if choice2_1_1_1 == "exit":
+                clear()
                 print(cheers)
                 print("The end. You escape. You Win. Go Home. It's over")
         if choice2_1_1 == "yes":
+            clear()
             print("You pet the monkey he tries to steal your soul. To fend him off you must play hangman")
+
+                            # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
             # setting up variables needed for  hangman
             word_list2_1_1 = words.word_list
             chosen_word2_1_1 = random.choice(word_list2_1_1)
@@ -145,12 +155,16 @@ if choice1 == "left":
                 end_of_game2_1_1 = True
                 print(cheers)
                 print("You've won. for now...")
-                # end of hangman logic
+
+                                # !!!!!!!!!!!!!!!! End of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                print(fork_in_road)
                 choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                 if choice2_1_1_1 == "treasure":
+                    clear()
                     print(death)
                     print("Game Over you greedy bastard!")
                 if choice2_1_1_1 == "exit":
+                    clear()
                     print(cheers)
                     print("The end. You escape. You Win. Go Home. It's over")
 
@@ -160,6 +174,9 @@ if choice1 == "left":
         clear()
         print(seabeast)
         print("Beast from the depths request 3.50 to pass. You have no money so are forced to play Hangman")
+
+                        # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
         # setting up variables needed for  hangman
         word_list2_1 = words.word_list
         chosen_word2_1 = random.choice(word_list2_1)
@@ -220,19 +237,30 @@ if choice1 == "left":
                 end_of_game2_1 = True
                 print(cheers)
                 print("You've won. for now...")
-                # end of hangman logic
+
+
+                                # !!!!!!!!!!!!!!!! End of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                clear()
                 choice2_1_1 = input("You run into a monkey. He looks cute yet mischevious. Do you pet the monkey. Choose one: yes or no  ").lower()
                 if choice2_1_1 == "no":
+                    clear()
                     print("You dont pet the monkey. As you pass the monkey you see a knife clutched in his hand. Once out of your sight you hear a blood curdling scream. You dont look back")
+                    print(fork_in_road)
                     choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                     if choice2_1_1_1 == "treasure":
+                            clear()
                             print(death)
                             print("Game Over you greedy bastard!")
                     if choice2_1_1_1 == "exit":
+                            clear()
                             print(cheers)
                             print("The end. You escape. You Win. Go Home. It's over")
                 if choice2_1_1 == "yes":
+                    clear()
                     print("You pet the monkey he tries to steal your soul. To fend him off you must play hangman")
+
+                                    # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
                     # setting up variables needed for  hangman
                     word_list2_1_1 = words.word_list
                     chosen_word2_1_1 = random.choice(word_list2_1_1)
@@ -291,21 +319,26 @@ if choice1 == "left":
                             end_of_game2_1_1 = True
                             print(cheers)
                             print("You've won. for now...")
-                            # end of hangman logic
+
+                                            # !!!!!!!!!!!!!!!! End of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                            print(fork_in_road)
                             choice2_1_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                             if choice2_1_1_1 == "treasure":
+                                clear()
                                 print(death)
                                 print("Game Over you greedy bastard!")
                             if choice2_1_1_1 == "exit":
+                                clear()
                                 print(cheers)
                                 print("The end. You escape. You Win. Go Home. It's over")
 
 
-# !!!!!!!!!!! First Choice right !!!!!!!!!!!!!!!!!!!
+# !!!!!!!!!!! First Choice right: Big Mo, Mesquito King !!!!!!!!!!!!!!!!!!!
 if choice1 == "right":
     print("You run into a Big Mo, Mesquito King of the Jungle. Its time to play hangman")
 
-# start of hangman logic
+                # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     # setting up variables needed for  hangman
     word_list = words.word_list
     chosen_word = random.choice(word_list)
@@ -367,23 +400,32 @@ if choice1 == "right":
             end_of_game = True
             print(cheers)
             print("You've won. for now..")
-            # end of hangman logic
+
+                            # !!!!!!!!!!!!!!!! End of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            print(lighter)
             choice2_1 = input("You find a bag in the road. It has two items in it. Choose one: Lighter or Dictionary").lower()
             print("You run into a giant trying to light a cigarette.")
 
 
             if choice2_1 == "lighter":
+                print(smoking)
                 print("You let him use your lighter and he continues to smoke all his life until one day he gets lung cancer. He dies. You pass ")
+                print(fork_in_road)
                 choice2_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                 if choice2_1_1 == "treasure":
+                    clear()
                     print(death)
                     print("Game Over you greedy bastard!")
                 if choice2_1_1 == "exit":
+                    clear()
                     print(cheers)
                     print("The end. You escape. You Win. Go Home. It's over")
 
             if choice2_1 == "dictionary":
                 print("The giant looks down at you and asks for a light. When you say you dont smoke he becomes infuriated. You throw your dictionary at him in vain. Time to play hangman.")
+
+
+                # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 # setting up variables needed for  hangman
                 word_list2_1 = words.word_list
                 chosen_word2_1 = random.choice(word_list2_1)
@@ -444,12 +486,16 @@ if choice1 == "right":
                         end_of_game2_1 = True
                         print(cheers)
                         print("You've won. for now...")
-                        # end of hangman logic
+
+                        #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! end of hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
                         choice2_1_1 = input("You come to a fork in the road One sign says 'treasure'. One sign says 'Exit'. Choose one treasure or sign:  ").lower()
                         if choice2_1_1 == "treasure":
+                            clear()
                             print(death)
                             print("Game Over you greedy bastard!")
                         if choice2_1_1 == "exit":
+                            clear()
                             print(cheers)
                             print("The end. You escape. You Win. Go Home. It's over")
 
