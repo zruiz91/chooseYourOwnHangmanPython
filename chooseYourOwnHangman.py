@@ -48,7 +48,7 @@ input("click Enter to continue")
 clear()
 print(treasure)
 print(f"Driven by curiosity and a thirst for adventure, {user_name} decided to embark on a journey to uncover the treasure.")
-print(butt)
+# print(butt)
 input("click Enter to continue")
 
 clear()
@@ -63,14 +63,14 @@ clear()
 # !!!!!!!!!!! First Choice!!!!!!!!!!!!!!!!!!!
 
 print(fork_in_road)
-choice1 = input('You\'ve reached a fork in the road. Type "left" or "right"  ').lower()
+choice1 = input('Before you lies a narrow path that splits into two directions. A signpost stands at the crossroads, its inscription worn but readable: "Left or Right, the choice is yours."  ').lower()
 
 
 # !!!!!!!!!!! First Choice Left !!!!!!!!!!!!!!!!!!!
 if choice1 == "left":
     clear()
     print(lake_waterhole)
-    choice2_1 = input("You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
+    choice2_1 = input("Intrigued by the allure of the unknown, you decide to follow the path to the left. As you venture deeper into the forest, the lush greenery opens up to reveal a sparkling lake, its tranquil waters mirroring the sky above. \n\n However, your progress is halted by the obstacle before you. Will you brave the swim across the lake? (Go to Option 1a) or patiently wait for a boat to arrive?.\n\n Choose one: Swim or Wait ").lower()
 
 
 # !!!!!!!!!!! First Choice Left Second Choice Wait !!!!!!!!!!!!!!!!!!!
@@ -122,7 +122,7 @@ if choice1 == "left":
             while not end_of_game2_1_1:
                 guess2_1_1 = input("Guess a letter: ").lower()
 
-                # clear()
+                clear()
 
             if guess2_1_1 in display2_1_1:
                 print(f"Nice try Grandma but dont you remember you already guessed '{guess2_1_1}'. Try again.")
@@ -173,8 +173,8 @@ if choice1 == "left":
     if choice2_1 == "swim":
         clear()
         print(seabeast)
-        print("Beast from the depths request 3.50 to pass. You have no money so are forced to play Hangman")
-
+        print("Feeling a sense of trepidation, you gather your courage and decide to plunge into the murky depths of the lake, determined to make it to the other side. As you swim further away from the safety of the shore, the water grows eerily still, and an icy chill snakes its way up your spine.")
+        print("Suddenly, a sinister presence stirs beneath the surface. Dark shadows shift and writhe, and a pair of glowing, malevolent eyes fixate on you. Before you can react, a grotesque creature, born of nightmares, lunges towards you, its jagged teeth gleaming in the pale moonlight.\n")
                         # !!!!!!!!!!!!!!!! Start of Hangman logic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         # setting up variables needed for  hangman
@@ -185,7 +185,6 @@ if choice1 == "left":
         stages2_1 = art.stages
         guessed_letters2_1 = []
         display2_1 = []
-
 
         #Testing code
         print(f'Pssst, the solution is {chosen_word2_1}.')
@@ -203,7 +202,7 @@ if choice1 == "left":
         while not end_of_game2_1:
             guess2_1 = input("Guess a letter: ").lower()
 
-            # clear()
+            clear()
 
             if guess2_1 in display2_1:
                 print(f"Nice try Grandma but dont you remember you already guessed '{guess2_1}'. Try again.")
@@ -285,7 +284,7 @@ if choice1 == "left":
                     while not end_of_game2_1_1:
                         guess2_1_1 = input("Guess a letter: ").lower()
 
-                        # clear()
+                        clear()
 
                         if guess2_1_1 in display2_1_1:
                             print(f"Nice try Grandma but dont you remember you already guessed '{guess2_1_1}'. Try again.")
@@ -366,7 +365,7 @@ if choice1 == "right":
     while not end_of_game:
         guess = input("Guess a letter: ").lower()
 
-        # clear()
+        clear()
 
         if guess in display:
             print(f"Nice try Grandma but dont you remember you already guessed '{guess}'. Try again.")
@@ -452,7 +451,7 @@ if choice1 == "right":
                 while not end_of_game2_1:
                     guess2_1 = input("Guess a letter: ").lower()
 
-                    # clear()
+                    clear()
 
                     if guess2_1 in display2_1:
                         print(f"Nice try Grandma but dont you remember you already guessed '{guess2_1}'. Try again.")
