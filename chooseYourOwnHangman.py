@@ -19,6 +19,13 @@ cheers = art.beer
 boat = art.boat
 forest = art.forest
 lighter = art.lighter
+fairy = art.fairy
+skull = art.skull
+treasure = art.treasure
+butt = art.butt
+fork_in_road = art.fork_in_road
+
+seabeast = art.seabeast
 
 # !!!!!!!!!!! Preamble for the game !!!!!!!!!!!!!!!!!!!
 # printing logo for game
@@ -52,11 +59,13 @@ clear()
 
 # !!!!!!!!!!! First Choice!!!!!!!!!!!!!!!!!!!
 
+print(fork_in_road)
 choice1 = input('You\'ve reached a fork in the road. Type "left" or "right"  ').lower()
 
 
 # !!!!!!!!!!! First Choice Left !!!!!!!!!!!!!!!!!!!
 if choice1 == "left":
+    clear()
     choice2_1 = input(f"You come to Lake WaterHole. Choose one: Swim or Wait ").lower()
 
 
