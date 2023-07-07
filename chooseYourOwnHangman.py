@@ -24,6 +24,8 @@ skull = art.skull
 treasure = art.treasure
 butt = art.butt
 fork_in_road = art.fork_in_road
+seabeast = art.seabeast
+boat = art.boat
 
 seabeast = art.seabeast
 
@@ -71,6 +73,7 @@ if choice1 == "left":
 
 # !!!!!!!!!!! First Choice Left Second Choice Wait !!!!!!!!!!!!!!!!!!!
     if choice2_1 == "wait":
+        clear()
         print(boat)
         print("The boat takes you safely to the other side")
         choice2_1_1 = input("You run into a monkey. He looks cute yet mischevious. Do you pet the monkey. Choose one: yes or no  ").lower()
@@ -154,6 +157,8 @@ if choice1 == "left":
 
 # !!!!!!!!!!! First Choice Left Second Choice swim !!!!!!!!!!!!!!!!!!!
     if choice2_1 == "swim":
+        clear()
+        print(seabeast)
         print("Beast from the depths request 3.50 to pass. You have no money so are forced to play Hangman")
         # setting up variables needed for  hangman
         word_list2_1 = words.word_list
